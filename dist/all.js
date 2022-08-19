@@ -1,0 +1,1 @@
+let firstName="Łukasz",lastName="Kuś";document.title=`${firstName} ${lastName} - Recruitment task`;
