@@ -26,5 +26,13 @@ body {
 .section {
   display: flex;
   justify-content: center;
-  padding: 6rem 0;
+  padding: 1.5rem;
+
+  @include tablet {
+    padding: 4rem;
+  }
+
+  @include desktop {
+    padding: 6rem 0;
+  }
 }
