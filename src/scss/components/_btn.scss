@@ -18,7 +18,8 @@ $sass: color;
 
     &:focus,
     &:hover {
-      box-shadow: 5px 12px 15px $clr-dark-75;
+      box-shadow: 5px 12px 20px $clr-dark-75;
+      transition: 0.2s ease-in-out;
     }
   }
 }
