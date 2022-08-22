@@ -1,3 +1,5 @@
+$sass: color;
+
 .btn {
   font-family: $ff-main;
   font-weight: $fw-bold;
@@ -6,9 +8,17 @@
   padding: 1rem 2.5rem;
   border-radius: 2rem;
   margin: 2rem 0;
+  cursor: pointer;
 
   &--add-to-basket {
+    $clr-dark-75: lighten($clr-dark, 75%);
+
     background-color: $clr-primary;
     color: $clr-white;
+
+    &:focus,
+    &:hover {
+      box-shadow: 5px 12px 15px $clr-dark-75;
+    }
   }
 }
