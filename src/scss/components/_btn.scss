@@ -1,0 +1,14 @@
+.btn {
+  font-family: $ff-main;
+  font-weight: $fw-bold;
+  font-size: 1rem;
+  border: none;
+  padding: 1rem 2.5rem;
+  border-radius: 2rem;
+  margin: 2rem 0;
+
+  &--add-to-basket {
+    background-color: $clr-primary;
+    color: $clr-white;
+  }
+}
