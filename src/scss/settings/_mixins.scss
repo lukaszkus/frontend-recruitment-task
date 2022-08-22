@@ -1,5 +1,6 @@
+//breakpoints
 $tablet-width: 600px;
-$desktop-width: 1000px;
+$desktop-width: 1080px;
 
 @mixin tablet {
   @media (min-width: $tablet-width) {
@@ -11,4 +12,21 @@ $desktop-width: 1000px;
   @media (min-width: $desktop-width) {
     @content;
   }
+}
+
+//other
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-center-h {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin flex-center-y {
+  display: flex;
+  align-items: center;
 }

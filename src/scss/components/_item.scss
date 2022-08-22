@@ -1,6 +1,6 @@
 .item {
-  display: flex;
-  align-items: center;
+  @include flex-center-y;
+
   flex-wrap: wrap;
   gap: 1.5rem;
 
