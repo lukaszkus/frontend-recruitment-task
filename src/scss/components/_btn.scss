@@ -10,13 +10,12 @@ $sass: color;
   margin: 2rem 0;
   cursor: pointer;
 
-  &--add-to-basket {
+  &--modal-open {
     $clr-dark-75: lighten($clr-dark, 75%);
 
     background-color: $clr-primary;
     color: $clr-white;
 
-    &:focus,
     &:hover {
       box-shadow: 5px 12px 10px $clr-dark-75;
       transition: 0.2s ease-in-out;
