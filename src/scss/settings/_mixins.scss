@@ -26,7 +26,7 @@ $desktop-width: 1080px;
   justify-content: center;
 }
 
-@mixin flex-center-y {
+@mixin flex-center-v {
   display: flex;
   align-items: center;
 }

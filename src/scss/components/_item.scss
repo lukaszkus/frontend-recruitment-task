@@ -1,14 +1,6 @@
 .item {
-  @include flex-center-y;
-
-  flex-wrap: wrap;
-  gap: 1.5rem;
-
-  @include tablet {
-    gap: 3rem;
-  }
-
   @include desktop {
+    @include flex-center-v;
     gap: 6rem;
   }
 
@@ -25,7 +17,7 @@
     font-family: $ff-main;
     font-weight: $fw-bold;
     font-size: 2.625rem;
-    padding-bottom: 1.5rem;
+    padding: 1.5rem 0;
     line-height: 3.15rem;
   }
 
