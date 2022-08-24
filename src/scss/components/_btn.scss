@@ -8,12 +8,12 @@ $sass: color;
   padding: 1rem 2.5rem;
   border-radius: 2rem;
   border: 2px solid transparent;
-  margin: 2rem 0;
   cursor: pointer;
 
   &--modal-open {
     background-color: $clr-primary;
     color: $clr-white;
+    margin: 2rem 0;
 
     &:hover {
       color: $clr-primary;
@@ -23,7 +23,7 @@ $sass: color;
     }
   }
 
-  &--counter-reset {
+  &--reset {
     background-color: transparent;
     color: $clr-accent;
     border: 2px solid $clr-accent;
@@ -35,4 +35,10 @@ $sass: color;
       transition: 0.2s ease;
     }
   }
+}
+
+.disabled {
+  color: $clr-disabled;
+  border: 2px solid $clr-disabled;
+  pointer-events: none;
 }
