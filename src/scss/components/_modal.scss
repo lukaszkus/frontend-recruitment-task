@@ -42,6 +42,12 @@
     }
   }
 
+  &__body {
+    @include flex-center-v;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
   &__message {
     font-family: $ff-main;
     font-weight: $fw-light;

@@ -7,18 +7,32 @@ $sass: color;
   border: none;
   padding: 1rem 2.5rem;
   border-radius: 2rem;
+  border: 2px solid transparent;
   margin: 2rem 0;
   cursor: pointer;
 
   &--modal-open {
-    $clr-dark-75: lighten($clr-dark, 75%);
-
     background-color: $clr-primary;
     color: $clr-white;
 
     &:hover {
-      box-shadow: 5px 12px 10px $clr-dark-75;
-      transition: 0.2s ease-in-out;
+      color: $clr-primary;
+      background-color: $clr-white;
+      border: 2px solid darken($clr-primary, 10%);
+      transition: 0.2s ease;
+    }
+  }
+
+  &--counter-reset {
+    background-color: transparent;
+    color: $clr-accent;
+    border: 2px solid $clr-accent;
+
+    &:hover {
+      color: $clr-white;
+      background-color: $clr-accent;
+      border: 2px solid transparent;
+      transition: 0.2s ease;
     }
   }
 }
