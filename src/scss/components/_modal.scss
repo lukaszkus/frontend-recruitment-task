@@ -26,6 +26,16 @@
     padding: 2.5rem 3rem;
   }
 
+  &__header {
+    @include tablet {
+      padding-bottom: 1rem;
+    }
+
+    @include desktop {
+      padding-bottom: 2rem;
+    }
+  }
+
   &__title {
     font-family: $ff-main;
     font-weight: $fw-bold;
@@ -61,7 +71,7 @@
     }
   }
 
-  &__message {
+  &__content {
     font-family: $ff-main;
     font-weight: $fw-light;
     font-size: 1rem;
@@ -75,6 +85,16 @@
 
   &__counter {
     font-weight: $fw-bold;
+  }
+
+  &__message {
+    color: $clr-accent;
+    font-size: 1rem;
+    padding: 1rem 0;
+
+    @include tablet {
+      padding: 0;
+    }
   }
 }
 
